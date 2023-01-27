@@ -7,5 +7,4 @@ public class SenibApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SenibApplication.class, args);
 	}
-
 }
