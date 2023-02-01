@@ -15,10 +15,13 @@ public class Aluno extends AbstractEntity<Long>{
     public String telefone;
     @Column(name = "email", nullable = false, length = 80)
     public String email;
+
+    @Enumerated(EnumType.STRING)
     @Column(name = "GA", nullable = false, length = 40)
-    public String GA;
+    public GA GA;
     @Column(name = "senha", nullable = false, length = 16)
     public String senha;
+
     public String getNome() {
         return nome;
     }
@@ -51,19 +54,19 @@ public class Aluno extends AbstractEntity<Long>{
         this.email = email;
     }
 
-    public String getGA() {
-        return GA;
-    }
-
-    public void setGA(String GA) {
-        this.GA = GA;
-    }
-
     public String getSenha() {
         return senha;
     }
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public com.nibsantoantonio.senib.domain.GA getGA() {
+        return GA;
+    }
+
+    public void setGA(com.nibsantoantonio.senib.domain.GA GA) {
+        this.GA = GA;
     }
 }
