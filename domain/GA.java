@@ -14,7 +14,6 @@ public enum GA {
     GA(String nome) {
         this.nome = nome;
     }
-
     public String getNome() {
         return nome;
     }

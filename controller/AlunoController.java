@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class AlunoController {
 
-    @GetMapping
+    @GetMapping("aluno")
     public String Ola(){
         return "Olá mundo";
     }
